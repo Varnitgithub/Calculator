@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/consLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:text=""
+        android:textSize="45sp"
+        android:textColor="#DC7633 "
+        android:gravity="right|bottom"
+        tools:ignore="MissingConstraints,RtlHardcoded">
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/LL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        app:layout_constraintBottom_toBottomOf="@+id/lL2"
+        app:layout_constraintTop_toBottomOf="@+id/display">
+
+        <TextView
+            android:layout_width="42dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="click"
+            android:text="@string/_9"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UsingOnClickInXml" />
+
+        <TextView
+            android:layout_width="42dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="click"
+            android:text="@string/_8"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UsingOnClickInXml" />
+
+        <TextView
+            android:layout_width="42dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="click"
+            android:text="@string/_7"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UsingOnClickInXml" />
+
+        <TextView
+            android:id="@+id/clear"
+            android:layout_width="42dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="clearAll"
+            android:text="@string/c"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UsingOnClickInXml" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        app:layout_constraintBottom_toBottomOf="@id/LL4"
+        app:layout_constraintTop_toTopOf="@id/lL2"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/three"
+            android:layout_width="42dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="click"
+            android:text="@string/_3"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UsingOnClickInXml" />
+
+        <TextView
+            android:layout_width="42dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="click"
+            android:text="@string/_2"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UsingOnClickInXml" />
+
+        <TextView
+            android:layout_width="42dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="click"
+            android:text="@string/_1"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UsingOnClickInXml" />
+
+        <TextView
+            android:layout_width="42dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="OneTimeclick"
+            android:text="@string/star"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UsingOnClickInXml" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lL2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        app:layout_constraintBottom_toBottomOf="@+id/LL3"
+        app:layout_constraintTop_toTopOf="@+id/LL1"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="42dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="click"
+            android:text="@string/_6"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UsingOnClickInXml" />
+
+        <TextView
+            android:layout_width="42dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="click"
+            android:text="@string/_5"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UsingOnClickInXml" />
+
+        <TextView
+            android:layout_width="42dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="click"
+            android:text="@string/_4"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UsingOnClickInXml" />
+
+        <TextView
+            android:layout_width="42dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="OneTimeclick"
+            android:text="@string/devide"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UsingOnClickInXml" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/LL5"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal"
+        android:weightSum="5.4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/LL4"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="42dp"
+            android:layout_height="72dp"
+            android:layout_weight="4.4"
+            android:gravity="center"
+            android:onClick="Addition"
+            android:text="@string/equal"
+            android:textColor="#1A237E"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UsingOnClickInXml" />
+
+        <TextView
+            android:layout_width="42dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="dot"
+            android:text="@string/dot"
+            android:textColor="#1A237E"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UsingOnClickInXml" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5.4"
+        app:layout_constraintBottom_toBottomOf="@+id/LL5"
+        app:layout_constraintTop_toTopOf="@+id/LL3"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="42dp"
+            android:layout_height="72dp"
+            android:layout_weight="3.4"
+            android:gravity="center"
+            android:onClick="click"
+            android:text="@string/_0"
+            android:textSize="35sp"
+            tools:ignore="UsingOnClickInXml">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="42dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="subtract"
+            android:text="@string/minus"
+            android:textColor="#283593"
+            android:textSize="35sp"
+            tools:ignore="UsingOnClickInXml,TextContrastCheck">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="42dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="OneTimeclick"
+            android:text="@string/plus"
+            android:textSize="35sp"
+            tools:ignore="UsingOnClickInXml">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
